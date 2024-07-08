@@ -24,9 +24,8 @@ public static class DependencyInjectionExtension
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("DbConnection");
-        var serverVersion = ServerVersion.AutoDetect(connectionString);
         
-        services.AddDbContext<XpCalculatorDbContext>(config => config.UseMySql(connectionString, serverVersion));
+        services.AddDbContext<XpCalculatorDbContext>(config => config.UseNpgsql(connectionString));
     }
 
     private static void AddUseCases(IServiceCollection services)
