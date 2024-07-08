@@ -1,0 +1,6 @@
+@XpLevelCalculator.Api_HostAddress = http://localhost:5160
+
+GET {{XpLevelCalculator.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
