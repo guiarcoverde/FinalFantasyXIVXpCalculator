@@ -5,9 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A4C73ED8-A194-41B0-8B32-CE2017B36B50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XpLevelCalculator.Api", "src\XpLevelCalculator.Api\XpLevelCalculator.Api.csproj", "{02317584-CF3E-4A0E-87D3-56878B6D5CC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XpLevelCalculator.Api", "src\XpLevelCalculator.Api\XpLevelCalculator.Api.csproj", "{02317584-CF3E-4A0E-87D3-56878B6D5CC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XpLevelCalculator.Core", "src\XpLevelCalculator.Core\XpLevelCalculator.Core.csproj", "{F99B881C-846A-4673-822B-E81E86CEDD2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XpLevelCalculator.Core", "src\XpLevelCalculator.Core\XpLevelCalculator.Core.csproj", "{F99B881C-846A-4673-822B-E81E86CEDD2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

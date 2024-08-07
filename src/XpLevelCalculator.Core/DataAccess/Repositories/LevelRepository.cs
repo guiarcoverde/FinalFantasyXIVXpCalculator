@@ -14,7 +14,9 @@ public class LevelRepository(XpCalculatorDbContext dbContext) : ILevelReadOnlyRe
             .Where(l => l.Level > request.Level && l.Level <= request.LevelToAchieve)
             .SumAsync(l => l.LevelXp);
 
-        var necessaryXp = sumNecessaryXp - request.XpPossessed;
+        var xpPossess = request.XpPossessed;
+
+        var necessaryXp = sumNecessaryXp - xpPossess;
 
         var activityAmount = Math.Ceiling((double)necessaryXp / request.XpGivenByActivity);
 

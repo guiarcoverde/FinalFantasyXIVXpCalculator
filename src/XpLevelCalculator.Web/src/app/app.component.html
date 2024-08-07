@@ -1,0 +1,51 @@
+<div class="flex h-screen">
+  <div class="w-[50%]">
+    <form (ngSubmit)="onFormSubmit()" [formGroup]="levelForms" class="px-4">
+      <h1 class="py-10 font-extrabold text-5xl">Level Calculator</h1>
+      <div class="mt-2">
+        <label for="level" class="font-bold">Current Level</label>
+        <input
+          type="number"
+          class="w-full p-2 border-2 rounded-sm mt-2"
+          formControlName="level"
+        />
+      </div>
+      <div class="mt-2">
+        <label for="levelToAchieve" class="font-bold">Target level</label>
+        <input
+          type="number"
+          class="w-full p-2 border-2 rounded-sm mt-2"
+          formControlName="levelToAchieve"
+        />
+      </div>
+      <div class="mt-2">
+        <label for="xpPossessed" class="font-bold">Actual xp possessed</label>
+        <input
+          type="number"
+          class="w-full p-2 border-2 rounded-sm mt-2"
+          formControlName="levelToAchieve"
+        />
+      </div>
+      <div class="mt-2">
+        <label for="xpGivenByActivity" class="font-bold">Xp amount given by activity</label>
+        <input
+          type="number"
+          class="w-full p-2 border-2 rounded-sm mt-2"
+          formControlName="xpGivenByActivity"
+        />
+      </div>
+      <div class="mt-2">
+        <button type="submit" class="bg-slate-800 text-white px-4 px-2 rounded-sm w-full">Calculate</button>
+      </div>
+      <div>
+        @if(result) {
+          @if(result.activityAmount) {
+            <h2>You'll need to do the activity {{ result.activityAmount }} times</h2>
+          } 
+        } @else {
+          <h2>Insert values to calculate!</h2>
+        }
+      </div>
+    </form>
+  </div>
+</div>
